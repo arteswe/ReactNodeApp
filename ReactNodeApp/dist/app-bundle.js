@@ -104,7 +104,7 @@ class Board extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            squares: Array(9).fill(null),
+            squares: Array(9),
             xIsNext: true,
         };
     }
@@ -156,7 +156,7 @@ function calculateWinner(squares) {
         [1, 4, 7],
         [2, 5, 8],
         [0, 4, 8],
-        [2, 4, 6],
+        [2, 4, 6]
     ];
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
@@ -178,55 +178,6 @@ class Game extends React.Component {
 }
 // ========================================
 ReactDOM.render(React.createElement(Game, null), document.getElementById('root'));
-//export class Hello extends React.Component {
-//    render() {
-//        return (
-//            <h1>Welcome to React!!</h1>
-//        );
-//    }
-//}
-//class Button extends React.Component {
-//    //handleClick = () => {
-//    //    this.setState((prevState) => {
-//    //        return {
-//    //            counter: prevState.count + 1
-//    //        };
-//    //    });
-//    //    // this.setState({count: this.state.count +1 } )
-//    //};
-//    render() {
-//        return (
-//            <button onClick={this.props.onClickFunction}> {clickme}</button>
-//        );
-//    };
-//};
-//const Result = (props) => {
-//    return (
-//        <div>..</div>
-//    );
-//};
-//class App extends React.Component {
-//    state = { count: 0 };
-//    incrementCount = () => {
-//        this.setState((prevState) =>
-//            (
-//                {
-//                    count: prevState.count + 1
-//                }));
-//    };
-//    render() {
-//        return (
-//            <div>
-//                <Hello />
-//                <Button onClick={this.incrementCount} />
-//                <Result />
-//            </div>
-//        );
-//    };
-//};
-//ReactDOM.render(<App />, document.getElementById('root'));
-//ReactDOM.render(<Hello />, document.getElementById('root'));
-//ReactDOM.render(<Button />, document.getElementById('goId'));
 
 
 /***/ }),

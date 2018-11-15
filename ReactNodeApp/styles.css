@@ -5,7 +5,8 @@ body {
     max-width: 330px;
     margin-top: 50px;
     margin-left: 150px;
-    background-color: lime;
+    background-color: #ccc;
+    border: rgb(0, 0, 128) dotted 3px;
 }
 .game-board div {
     margin-left: 40px;
@@ -22,5 +23,5 @@ button.square {
     margin-bottom: 15px;
 }
 .square {
-    background-color: yellow;
+    background-color: #fffff0;
 }
