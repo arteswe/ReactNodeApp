@@ -7,6 +7,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNodeApp", "ReactNodeAp
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNodeCounter", "ReactNodeCounter\ReactNodeCounter.njsproj", "{7EA67E31-CC5D-42CB-AB8B-4A5B4464CDAE}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNodeGitHubUserFinder", "ReactNodeGitHubUserFinder\ReactNodeGitHubUserFinder.njsproj", "{00253A22-5E9A-4767-A752-43F3F0BEECAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7EA67E31-CC5D-42CB-AB8B-4A5B4464CDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA67E31-CC5D-42CB-AB8B-4A5B4464CDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA67E31-CC5D-42CB-AB8B-4A5B4464CDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00253A22-5E9A-4767-A752-43F3F0BEECAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00253A22-5E9A-4767-A752-43F3F0BEECAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00253A22-5E9A-4767-A752-43F3F0BEECAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00253A22-5E9A-4767-A752-43F3F0BEECAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
