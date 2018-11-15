@@ -1,15 +1,20 @@
 body {
     font-family: Verdana;
+    margin: 130px;
+    max-width: 400px;
+    margin: auto;
+    
 }
 .game-board {
     max-width: 330px;
     margin-top: 50px;
-    margin-left: 150px;
     background-color: #ccc;
     border: rgb(0, 0, 128) dotted 3px;
+    padding-bottom: 20px;
 }
 .game-board div {
     margin-left: 40px;
+    
 }
 .status {
     margin-bottom: 20px;
@@ -18,10 +23,12 @@ body {
     padding: 20px 0;
 }
 button.square {
-    padding: 20px !important;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    padding: 20px;
 }
-.square {
-    background-color: #fffff0;
-}
+    
+    .square {
+        background-color: #fffff0;
+    }
