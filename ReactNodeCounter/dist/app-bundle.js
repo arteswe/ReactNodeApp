@@ -96,8 +96,16 @@
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 class Button extends React.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.handleClick = () => {
+            this.props.onButtonClickFunc(this.props.incrementValue);
+        };
+    }
     render() {
-        return (React.createElement("button", { onClick: this.props.onButtonClickFunc }, "\u00D6ka med 1"));
+        return (React.createElement("button", { onClick: this.handleClick },
+            "\u00D6ka med ",
+            this.props.incrementValue));
     }
 }
 class Result extends React.Component {
@@ -112,15 +120,17 @@ class App extends React.PureComponent {
     constructor() {
         super(...arguments);
         this.state = { counter: 0 };
-        this.incrementCounter = () => {
+        this.incrementCounter = (incrementValue) => {
             this.setState((prevState) => ({
-                counter: prevState.counter + 1
+                counter: prevState.counter + incrementValue
             }));
         };
     }
     render() {
         return (React.createElement("div", null,
-            React.createElement(Button, Object.assign({}, this.props, { onButtonClickFunc: this.incrementCounter })),
+            React.createElement(Button, Object.assign({}, this.props, { incrementValue: 1, onButtonClickFunc: this.incrementCounter })),
+            React.createElement(Button, Object.assign({}, this.props, { incrementValue: 5, onButtonClickFunc: this.incrementCounter })),
+            React.createElement(Button, Object.assign({}, this.props, { incrementValue: 110, onButtonClickFunc: this.incrementCounter })),
             React.createElement(Result, Object.assign({}, this.props, { counter: this.state.counter }))));
     }
 }

@@ -1,22 +1,19 @@
 ﻿declare var require: any
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-
-
 class Button extends React.PureComponent {
-
+    handleClick = () => {
+        this.props.onButtonClickFunc(this.props.incrementValue)
+    }
     render() {
         return (
-            <button onClick={this.props.onButtonClickFunc}>Öka med 1</button>
+            <button onClick={this.handleClick}>Öka med {this.props.incrementValue}</button>
         );
     }
-
 }
 
 class Result extends React.Component {
-
     render() {
         return (
             <div>
@@ -26,29 +23,26 @@ class Result extends React.Component {
             </div>
         );
     }
-
 }
 
 class App extends React.PureComponent {
     state = { counter: 0 }
-    incrementCounter = () => {
+    incrementCounter = (incrementValue) => {
         this.setState((prevState) => ({
-            counter: prevState.counter + 1
+            counter: prevState.counter + incrementValue
         }));
-
     }
     render() {
         return (
             <div>
-                <Button {...this.props} onButtonClickFunc={this.incrementCounter}/>
+                <Button {...this.props} incrementValue={1} onButtonClickFunc={this.incrementCounter} />
+                <Button {...this.props} incrementValue={5} onButtonClickFunc={this.incrementCounter} />
+                <Button {...this.props} incrementValue={110} onButtonClickFunc={this.incrementCounter} />
                 <Result {...this.props} counter={this.state.counter}/>
             </div>
         );
     }
-
 }
-
-
 
 ReactDOM.render(
     <App />,
