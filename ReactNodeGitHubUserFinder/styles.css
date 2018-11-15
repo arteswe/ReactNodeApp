@@ -1,7 +1,13 @@
 body {
     font-family: Verdana;
-    margin: 130px;
-    max-width: 400px;
+    margin: 80px;
+    max-width: 600px;
     margin: auto;
-    
+    font-size: 16px;
+}
+.floatleft {
+    float: left;
+}
+.space20 {
+    margin-left: 20px;
 }
