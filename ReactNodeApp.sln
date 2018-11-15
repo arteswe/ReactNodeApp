@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28302.56
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNodeApp", "ReactNodeApp\ReactNodeApp.njsproj", "{BFE25680-F8E0-4856-9380-56004B7AD59D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFE25680-F8E0-4856-9380-56004B7AD59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE25680-F8E0-4856-9380-56004B7AD59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE25680-F8E0-4856-9380-56004B7AD59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE25680-F8E0-4856-9380-56004B7AD59D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5D0DCF8-C4E6-40BB-9319-0018ADB7744E}
+	EndGlobalSection
+EndGlobal

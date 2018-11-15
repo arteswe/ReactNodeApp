@@ -1,0 +1,26 @@
+body {
+    font-family: Verdana;
+}
+.game-board {
+    max-width: 330px;
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color: lime;
+}
+.game-board div {
+    margin-left: 40px;
+}
+.status {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+button.square {
+    padding: 20px !important;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.square {
+    background-color: yellow;
+}
