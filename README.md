@@ -1,2 +1,2 @@
 # ReactNodeApp
-Work in progress - learning React
+Work in progress - trying to learn React
