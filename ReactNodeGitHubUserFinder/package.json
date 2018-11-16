@@ -7,11 +7,13 @@
     "name": ""
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "~4.16.4",
     "js-polyfills": "^0.1.42",
     "path": "~0.12.7",
     "polyfill": "^0.1.0",
     "react": "~16.6.0",
+    "react-axios": "^2.0.1",
     "react-dom": "~16.6.0",
     "ts-loader": "~5.3.0",
     "typescript": "~3.1.5",
